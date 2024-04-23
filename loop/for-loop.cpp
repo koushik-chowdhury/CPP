@@ -16,7 +16,6 @@ int main()
     {
         cout << "Koushik " << i << endl;
     }
-
     cout << "Enter your Starting point: ";
     cin >> countstart;
     cout << "Enter your End point: ";
