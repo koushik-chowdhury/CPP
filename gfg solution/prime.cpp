@@ -22,11 +22,13 @@ int main()
     }
     if (flag == 0)
     {
-        cout << num << " is prime";
+        cout << num << " is prime" << endl;
     }
     else
     {
-        cout << num << " is not prime";
+        cout << num << " is not prime" << endl;
     }
+
+    system("pause"); // for holding the screen
     return 0;
 }

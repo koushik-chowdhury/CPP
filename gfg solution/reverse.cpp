@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    // variable define 
+    // variable define
 
     int num, temp, rev = 0, orgnl;
 
@@ -16,9 +16,8 @@ int main()
         rev = temp + (rev * 10);
         num = num / 10;
     }
-    cout << "Original - " << orgnl << " Reverse - "<< rev;
+    cout << "Original - " << orgnl << " Reverse - " << rev << endl;
 
-    
-
+    system("pause"); // for holding the screen
     return 0;
 }

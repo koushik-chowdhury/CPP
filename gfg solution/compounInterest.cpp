@@ -29,5 +29,6 @@ int main() {
   cout << "Compound Interest: " << compound_interest << endl;
   cout << "Total Amount: " << amount << endl;
 
+  system("pause"); // for holding the screen
   return 0;
 }

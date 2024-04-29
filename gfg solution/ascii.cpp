@@ -56,7 +56,7 @@ int main()
         cin >> start;
         cout << start << " = " << (int)start;
     }
-     case 4:
+    case 4:
     {
         cout << "Enter your value: ";
         cin >> istart;
@@ -65,6 +65,10 @@ int main()
     default:
         break;
 
-        return 0;
+        cout<< " ";
+
+        
     }
+    system("pause");
+    return 0;
 }

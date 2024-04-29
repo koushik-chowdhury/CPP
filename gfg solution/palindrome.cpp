@@ -24,5 +24,7 @@ int main()
     {
         cout << "The given number is not palindrome";
     }
+
+    system("pause"); // for holding the screen
     return 0;
 }
