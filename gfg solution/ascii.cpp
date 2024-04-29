@@ -33,6 +33,7 @@ int main()
         {
             cout << start << " = " << (char)start << ", ";
         }
+        cout << endl;
         break;
     }
     case 2:
@@ -48,27 +49,24 @@ int main()
         {
             cout << istart << " = " << (char)istart << ", ";
         }
+        cout << endl;
         break;
     }
     case 3:
     {
         cout << "Enter your character: ";
         cin >> start;
-        cout << start << " = " << (int)start;
+        cout << start << " = " << (int)start << endl;
     }
     case 4:
     {
         cout << "Enter your value: ";
         cin >> istart;
-        cout << istart << " = " << (char)istart;
+        cout << istart << " = " << (char)istart << endl;
     }
     default:
         break;
-
-        cout<< " ";
-
-        
     }
-    system("pause");
+    system("pause"); // for holding the screen
     return 0;
 }

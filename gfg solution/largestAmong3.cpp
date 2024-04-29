@@ -21,15 +21,17 @@ int main()
     // checking largest among three number
     if (n1 > n2 && n1 > n3)
     {
-        cout << n1 << " is Largest";
+        cout << n1 << " is Largest" << endl;
     }
     else if (n2 > n3)
     {
-        cout << n2 << " is largest";
+        cout << n2 << " is largest" << endl;
     }
     else
     {
-        cout << n3 << " is largest";
+        cout << n3 << " is largest" << endl;
     }
+
+    system("pause"); // for holding the screen
     return 0;
 }

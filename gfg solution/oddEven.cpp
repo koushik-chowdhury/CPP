@@ -19,5 +19,7 @@ int main()
     {
         cout << num << " is odd number" << endl;
     }
+
+    system("pause"); // for holding the screen
     return 0;
 }

@@ -18,11 +18,11 @@ int main()
     }
     if(orgnl == rev)
     {
-        cout << "The given number is palindrome";
+        cout << "The given number is palindrome" << endl;
     }
     else 
     {
-        cout << "The given number is not palindrome";
+        cout << "The given number is not palindrome" << endl;
     }
 
     system("pause"); // for holding the screen
