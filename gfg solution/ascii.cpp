@@ -31,7 +31,7 @@ int main()
 
         for (; start <= end; start += 1)
         {
-            cout << start << " = " << (char)start << ", ";
+            cout << start << " = " << (int)start << ", ";
         }
         cout << endl;
         break;
