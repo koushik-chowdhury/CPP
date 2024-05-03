@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 void switchCase();
-void triangle();
-void flipTriangle();
-void invertedTriangle();
+void rightHP();
+void leftHP();
+void invertedRHP();
+void invertedLHP();
 
 int main()
-{    
+{
     switchCase();
     return 0;
     system("pause");
@@ -15,42 +16,57 @@ int main()
 void switchCase()
 {
     int choice;
-    cout << "Press 1 for Triangle " << endl;
-    cout << "Press 2 for flip Triangle " << endl;
-    cout << "Press 3 for Inverted Triangle " << endl;
+
+    // cout << endl;
+    cout << "Press 1 for Right half pyramid " << endl;
+    cout << "Press 2 for Left half pyramid " << endl;
+    cout << "Press 3 for Inverted Right half pyramid " << endl;
+    cout << "Press 4 for Inverted Left half pyramid " << endl;
 
     cout << "Enter your choice: ";
     cin >> choice;
+    cout << endl;
 
     switch (choice)
     {
     case 1:
     {
-        triangle();
+        rightHP();
         break;
     }
     case 2:
     {
-        flipTriangle();
+        leftHP();
         break;
     }
     case 3:
     {
-        invertedTriangle();
+        invertedRHP();
+        break;
+    }
+    case 4:
+    {
+        invertedLHP();
+        break;
     }
     default:
+    {
+        cout << "You have entered wrong choice. Select again" << endl << endl;
+        switchCase();
         break;
+    }
     }
 }
 
 // patern printing functions
 
-void triangle()
+void rightHP()
 {
     int row, i, j;
 
     cout << "Enter row: ";
     cin >> row;
+    cout << endl;
 
     for (i = 1; i <= row; i += 1)
     {
@@ -62,12 +78,14 @@ void triangle()
     }
 }
 
-void flipTriangle()
+void leftHP()
 {
     int row, i, j, k;
 
     cout << "Enter row: ";
     cin >> row;
+    cout << endl;
+
     for (i = 1; i <= row; i += 1)
     {
         for (k = i; k <= row; k += 1)
@@ -82,18 +100,41 @@ void flipTriangle()
     }
 }
 
-void invertedTriangle()
+void invertedRHP()
 {
     int row, i, j;
 
     cout << "Enter row: ";
     cin >> row;
+    cout << endl;
 
     for (i = 1; i <= row; i += 1)
     {
         for (j = row; j >= i; j -= 1)
         {
             cout << " * ";
+        }
+        cout << endl;
+    }
+}
+
+void invertedLHP()
+{
+    int row, i, j;
+
+    cout << "Enter row: ";
+    cin >> row;
+    cout << endl;
+
+    for (i = 1; i <= row; i += 1)
+    {
+        for (j = 1; j <= i - 1; j += 1)
+        {
+            cout << " ";
+        }
+        for (j = row; j >= i; j -= 1)
+        {
+            cout << "*";
         }
         cout << endl;
     }
