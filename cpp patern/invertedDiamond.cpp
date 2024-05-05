@@ -13,7 +13,7 @@ int main()
         {
             cout << " ";
         }
-        for (j = i; j <= row*2 - i; j += 1)
+        for (j = i; j <= row * 2 - i; j += 1)
         { 
             cout << "*";
         }

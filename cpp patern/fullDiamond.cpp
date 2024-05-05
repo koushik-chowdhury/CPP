@@ -13,7 +13,19 @@ int main()
         {
             cout << " ";
         }
-        for (j = i; j <= (2 * i) - 1; j += 1)
+        for (j = 1; j <= (2 * i) - 1; j += 1)
+        { 
+            cout << "*";
+        }
+        cout << endl;
+    }
+    for (i = 1; i <= row; i += 1)
+    {
+        for (k = 1; k <= i; k += 1)
+        {
+            cout << ".";
+        }
+        for (j = i; j <= (row * 2) - (2+i); j += 1)
         { 
             cout << "*";
         }
