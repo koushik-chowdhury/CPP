@@ -1,0 +1,1 @@
+// String Length: Write a program that reads a string from the user and prints its length using the built-in strlen function.
