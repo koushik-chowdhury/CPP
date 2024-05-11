@@ -5,12 +5,12 @@ using namespace std;
 
 int main()
 {
-    int n;
-    
+    int n;  // variable declaration
+
     cout << "Enter a number : ";
     cin >> n;
 
-    if(n & 1)
+    if (n & 1)  // it will perform bitwise and. if both number is 1 then it will give 1.
     {
         cout << n << " is an odd number";
     }
@@ -18,6 +18,7 @@ int main()
     {
         cout << n << " is an even number";
     }
-
+    cout << endl;
+    system("pause");
     return 0;
 }
