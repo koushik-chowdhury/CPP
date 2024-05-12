@@ -1,4 +1,5 @@
 // Vowel or Consonant: Create a program that prompts the user for a character and determines if it's a vowel (a, e, i, o, u) or a consonant using a switch statement or multiple if statements.
+// check out 7.cpp
 
 #include <iostream>
 using namespace std;
