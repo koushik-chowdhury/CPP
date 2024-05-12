@@ -16,5 +16,7 @@ int main()
 
     gross = basic * (1 + da / 100 + hra / 100);
     cout << gross;
+    cout << endl;
+    system("pause");
     return 0;
 }
