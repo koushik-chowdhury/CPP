@@ -17,5 +17,7 @@ int main()
     interest = (principle * rate * time) / 100;
 
     cout << "Interest = " << interest;
+    cout << endl;
+    system("pause");
     return 0;
 }
