@@ -1,3 +1,5 @@
+// capital to lowerCase
+
 #include <iostream>
 using namespace std;
 
