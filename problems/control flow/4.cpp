@@ -22,12 +22,9 @@ void sumOfDig()
     {
         cout << "Enter a number: ";
         cin >> n;
-
         sum += n;
-
         cout << "Enter your choice y / n: ";
         cin >> choice;
-        
         if (choice != 'y')
         {
             cout << "sum of digits = " << sum;
