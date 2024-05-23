@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int row, i, j, k;
+    int num;
 
     cout << "Enter row: ";
     cin >> row;
@@ -11,11 +12,15 @@ int main()
     {
         for (k = i; k <= row-1; k += 1)
         {
-            cout << " ";
+            cout << "  ";
         }
-        for (j = 1; j <= (2 * i) - 1; j += 1)
+        for (j = 1; j <= i; j += 1)
         { 
-            cout << "*";
+            cout << j << " ";
+        }
+         for (int l = 1, num = i - 1; l < i, num > 0; l += 1, num -= 1)
+        { 
+            cout << num << " ";
         }
         cout << endl;
     }
