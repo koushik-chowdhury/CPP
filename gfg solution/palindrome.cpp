@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    // variable define 
+    // variable define
 
     int num, temp, rev = 0, orgnl;
 
@@ -16,11 +16,11 @@ int main()
         rev = temp + (rev * 10);
         num = num / 10;
     }
-    if(orgnl == rev)
+    if (orgnl == rev)
     {
         cout << "The given number is palindrome" << endl;
     }
-    else 
+    else
     {
         cout << "The given number is not palindrome" << endl;
     }
