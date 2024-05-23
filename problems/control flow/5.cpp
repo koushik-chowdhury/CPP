@@ -9,6 +9,7 @@ int main()
     mul();
 
     return 0;
+    system("pause");
 }
 
 // function
@@ -28,6 +29,6 @@ void mul()
         {
             cout << i <<" x " << j << " = " << i * j << endl;
         }
-        cout << " " << endl;
+        cout << endl;
     }
 }
