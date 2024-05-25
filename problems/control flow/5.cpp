@@ -23,12 +23,20 @@ void mul()
     cout << "Enter end point: ";
     cin >> end;
 
-    for (i = start; i <= end; i += 1)
+    if (start > 0 && end > 0)
     {
-        for (int j = 1; j <= 10; j += 1)
+        for (i = start; i <= end; i += 1)
         {
-            cout << i <<" x " << j << " = " << i * j << endl;
+            for (int j = 1; j <= 10; j += 1)
+            {
+                cout << i << " x " << j << " = " << i * j << endl;
+            }
+            cout << endl;
         }
-        cout << endl;
     }
+    else
+        {
+            cout << "Enter range greater than 0";
+            mul();
+        }
 }
