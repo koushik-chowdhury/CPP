@@ -35,8 +35,8 @@ void mul()
         }
     }
     else
-        {
-            cout << "Enter range greater than 0";
-            mul();
-        }
+    {
+        cout << "Enter range greater than 0" << endl;
+        mul();
+    }
 }
