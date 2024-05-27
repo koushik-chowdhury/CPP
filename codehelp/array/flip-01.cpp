@@ -16,23 +16,25 @@ void input()
     int n;
     cout << "Enter size of array : ";
     cin >> n;
+    if (n < 0)
+    {
+        input();
+    }
     int arr[n];
 
-    if (n > 0)
+    cout << "Enter array elements: ";
+    for (int i = 0; i < n; i += 1)
     {
-        cout << "Enter array elements: ";
-        for (int i = 0; i < n; i += 1)
-        {
-            cin >> arr[i];
-        }
+        cin >> arr[i];
     }
+
     sorting(arr, n);
 }
 
 void sorting(int arr[], int n)
 {
     int countZero = 0;
-     for (int i = 0; i < n; i += 1)
+    for (int i = 0; i < n; i += 1)
     {
         if (arr[i] == 0)
         {
