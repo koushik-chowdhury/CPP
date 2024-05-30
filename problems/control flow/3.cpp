@@ -21,15 +21,18 @@ int fibb()
 
     cout << " Enter size: ";
     cin >> n;
-    for (i = 0; i <= n; i += 1)
+    if (n > 0)
     {
-        temp = n1;
-        if (odd(temp))
+        for (i = 0; i <= n; i += 1)
         {
-            cout << temp << " " << endl;
+            temp = n1;
+            if (odd(temp))
+            {
+                cout << temp << " " << endl;
+            }
+            n1 += n2;
+            n2 = temp;
         }
-        n1 += n2;
-        n2 = temp;
     }
     return 0;
 }
