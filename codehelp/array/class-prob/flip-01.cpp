@@ -29,7 +29,7 @@ void input()
         cin >> arr[i];
         if (arr[i] < 0 || arr[i] > 1)
         {
-            cout << endl << "Only 0 and 1 allowed" << endl;
+            cout << endl << "Only 0 and 1 allowed" << endl << endl;
             input();
         }
     }
