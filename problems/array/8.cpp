@@ -9,6 +9,7 @@ void copy(int arr[], int n);
 int main()
 {
     input(); // function for taking size of the array from user.
+    system("pause");
     return 0;
 }
 
